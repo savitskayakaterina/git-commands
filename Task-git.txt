@@ -1,0 +1,32 @@
+* Создать свой репозиторий в таким же именем, как и имя пользователя: 
+1) open https://github.com/savitskayakaterina
+2) click Repositories
+3) click green button "New"
+4) fill the fields
+5) click the button "Create repository"
+
+* Склонировать его на свой компьютер в отдельную папку
+1) open VSCode
+2) Ctrl + Shift + P 
+3) git clone + ssh
+4) select the folder on computer where to clone the repository and click "Open"
+
+* Склонировать себе следующий репозиторий в отдельную папку https://github.com/testrusau/testrusau
+git clone https://github.com/testrusau/testrusau
+
+* Скопировать данные из склонированного репозитория и вставить их в ваш репозиторий
+git remote add savitskayakaterina git@github.com:savitskayakaterina.git
+git remote -v
+git checkout main
+Copy the files from the cloned repository's directory and paste them into local repository's directory
+git push git@github.com:savitskayakaterina.git
+git add .
+git commit -m "Adding portfolio"                 
+git push
+
+* Поочередно создайте репозитории для каждого выполненного задания по прошедшим модулям и загрузите туда ваши решения ДЗ.
+git init charles-proxy 
+git remote add charles-proxy https://github.com/savitskayakaterina/charles-proxy 
+README.md edited manually
+git commit -m "Adding new info"
+git push  
